@@ -12,47 +12,49 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         body {
-            background-color: #f0f4f8;
-            background-image: radial-gradient(#d9e2ec 1.5px, transparent 1.5px), radial-gradient(#d9e2ec 1.5px, #f0f4f8 1.5px);
-            background-size: 60px 60px;
-            background-position: 0 0, 30px 30px;
-            color: #333;
+            background-color: #0f172a;
+            background-image: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #f8fafc;
+            min-height: 100vh;
         }
         header {
             background: linear-gradient(135deg, #1e3c72, #2a5298);
             color: white;
-            padding: 30px 20px;
+            padding: 35px 20px;
             text-align: center;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
         }
         header h1 {
-            font-size: 2.5rem;
+            font-size: 2.6rem;
             margin-bottom: 5px;
+            letter-spacing: 0.5px;
         }
         header p {
             font-size: 1.1rem;
-            color: #dcdcdc;
+            color: #cbd5e1;
             margin-bottom: 15px;
         }
         .contact-info {
-            background: rgba(255, 255, 255, 0.15);
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
             display: inline-block;
             padding: 10px 20px;
-            border-radius: 5px;
+            border-radius: 8px;
             font-size: 1rem;
-            color: #fff;
+            color: #f1f5f9;
             line-height: 1.6;
         }
         .container {
             max-width: 1200px;
-            margin: 30px auto;
+            margin: 40px auto;
             padding: 0 20px;
         }
         .section-title {
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 35px;
             font-size: 2rem;
-            color: #1e3c72;
+            color: #38bdf8;
+            font-weight: 600;
         }
         .products-grid {
             display: grid;
@@ -60,24 +62,26 @@
             gap: 25px;
         }
         .product-card {
-            background: #ffffff;
-            border-radius: 10px;
+            background: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-            transition: transform 0.3s ease;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease, border-color 0.3s ease;
         }
         .product-card:hover {
             transform: translateY(-5px);
+            border-color: #38bdf8;
         }
         .product-img {
             height: 200px;
             width: 100%;
             object-fit: cover;
-            background-color: #e9ecef;
+            background-color: #0f172a;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #888;
+            color: #94a3b8;
             font-size: 0.9rem;
         }
         .product-info {
@@ -86,40 +90,42 @@
         .product-info h3 {
             font-size: 1.3rem;
             margin-bottom: 10px;
-            color: #222;
+            color: #f8fafc;
         }
         .product-info p {
             font-size: 0.95rem;
-            color: #666;
+            color: #94a3b8;
             margin-bottom: 15px;
+            line-height: 1.5;
         }
         .price {
             font-size: 1.2rem;
-            color: #2a5298;
+            color: #38bdf8;
             font-weight: bold;
             margin-bottom: 15px;
         }
         .contact-btn {
             display: block;
             width: 100%;
-            background-color: #28a745;
+            background-color: #22c55e;
             color: white;
             text-align: center;
-            padding: 10px;
-            border-radius: 5px;
+            padding: 12px;
+            border-radius: 6px;
             text-decoration: none;
             font-weight: bold;
             transition: background 0.2s;
         }
         .contact-btn:hover {
-            background-color: #218838;
+            background-color: #16a34a;
         }
         footer {
-            background-color: #1a1a1a;
-            color: white;
+            background-color: #0b0f19;
+            color: #94a3b8;
             text-align: center;
-            padding: 20px 0;
-            margin-top: 50px;
+            padding: 25px 0;
+            margin-top: 60px;
+            border-top: 1px solid #1e293b;
         }
     </style>
 </head>
